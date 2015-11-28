@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Firifon Browser</title>
+		<link rel="stylesheet" href="css/photon.min.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="window">							
+      		
+			<header class="toolbar toolbar-header">
+        		<h1 class="title">Firifon Browser</h1>
+      		</header>
+			
+			<div class="window-content">
+				
+				<div class="pane-group">
+      				<div class="pane-sm sidebar">
+																								
+						<nav class="nav-group">
+							<h5 class="nav-group-title">Search</h5>
+							<span class="nav-group-item">                					
+								<input value="http://www.google.es" id="urlinput" />																		
+							</span>
+							<span id="visit" class="nav-group-item">
+								Visit																				
+							</span>
+							<span id="newtab" class="nav-group-item">
+								New Tab
+							</span>
+							<!--<span id="boton" class="nav-group-item">
+								test
+							</span> -->
+						</nav>
+								
+						<nav id="tabbar" class="nav-group">
+							<h5 class="nav-group-title">Pages</h5>
+							<span class="nav-group-item active tab">                					
+								http://www.google.es
+							</span>
+						</nav>																
+									  
+					</div>
+      				<div class="pane">
+						<div id="views">							
+							<webview id="foo" src="http://www.google.es" class="view active" nodeintegration></webview>
+						</div>
+					</div>
+							
+    			</div>																																
+			</div>
+			
+			<footer class="toolbar toolbar-footer">
+				<h1 class="title">FirifonSoftware</h1>
+			</footer>
+		</div>		
+					
+		<script src="./app.js"></script>  
+	</body>
+</html>
+
